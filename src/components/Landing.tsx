@@ -138,12 +138,20 @@ export default function Landing({ setCurrentPage }: LandingProps) {
                 </button>{' '}
                 untuk fitur lebih lengkap.
               </p>
-              <button
-                onClick={() => setCurrentPage('backend')}
-                className="mt-3 inline-flex items-center gap-1 text-xs text-purple-600 font-medium hover:underline"
-              >
-                📦 Lihat Backend Setup (PHP/MySQL) →
-              </button>
+              <div className="mt-3 flex flex-wrap gap-3 justify-center">
+                <button
+                  onClick={() => setCurrentPage('xampp')}
+                  className="inline-flex items-center gap-1 text-xs text-orange-600 font-medium hover:underline bg-orange-50 px-3 py-1.5 rounded-full"
+                >
+                  🖥️ Cara Install di XAMPP →
+                </button>
+                <button
+                  onClick={() => setCurrentPage('backend')}
+                  className="inline-flex items-center gap-1 text-xs text-purple-600 font-medium hover:underline bg-purple-50 px-3 py-1.5 rounded-full"
+                >
+                  📦 Backend Setup (PHP/MySQL) →
+                </button>
+              </div>
             </div>
           </div>
         </div>

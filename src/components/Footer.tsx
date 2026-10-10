@@ -49,6 +49,14 @@ export default function Footer({ setCurrentPage }: FooterProps) {
                   Backend Setup (PHP/MySQL)
                 </button>
               </li>
+              <li>
+                <button 
+                  onClick={() => setCurrentPage?.('xampp')}
+                  className="hover:text-white transition-colors text-left"
+                >
+                  🖥️ Install di XAMPP
+                </button>
+              </li>
             </ul>
           </div>
 

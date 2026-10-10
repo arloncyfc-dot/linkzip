@@ -16,6 +16,7 @@ export default function Navbar({ currentPage, setCurrentPage, isLoggedIn, userNa
     { id: 'home', label: 'Beranda' },
     { id: 'pricing', label: 'Harga' },
     { id: 'features', label: 'Fitur' },
+    { id: 'xampp', label: '🖥️ XAMPP' },
   ];
 
   return (

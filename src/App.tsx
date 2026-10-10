@@ -9,6 +9,7 @@ import Features from './components/Features';
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
 import BackendDocs from './components/BackendDocs';
+import XamppGuide from './components/XamppGuide';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -62,6 +63,8 @@ function App() {
         return <Features setCurrentPage={setCurrentPage} />;
       case 'backend':
         return <BackendDocs setCurrentPage={setCurrentPage} />;
+      case 'xampp':
+        return <XamppGuide setCurrentPage={setCurrentPage} />;
       case 'dashboard':
         if (!user) {
           return <Auth mode="login" setCurrentPage={setCurrentPage} onLogin={handleLogin} />;
